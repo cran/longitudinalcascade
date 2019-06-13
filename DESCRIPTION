@@ -1,6 +1,6 @@
 Package: longitudinalcascade
 Title: Longitudinal Cascade
-Version: 0.2.1.1
+Version: 0.3.1.1
 Authors@R: 
     person(given = "Noah",
            family = "Haber",
@@ -14,8 +14,8 @@ Imports:
         dplyr,survival,ggplot2,tidyr,zoo,scales,grDevices,stats,rlang,lubridate
 RoxygenNote: 6.1.1
 NeedsCompilation: no
-Packaged: 2019-04-03 20:07:36 UTC; Noah Haber
+Packaged: 2019-06-13 15:08:49 UTC; Noah Haber
 Author: Noah Haber [aut, cre]
 Maintainer: Noah Haber <noahhaber@gmail.com>
 Repository: CRAN
-Date/Publication: 2019-04-03 20:40:03 UTC
+Date/Publication: 2019-06-13 15:40:12 UTC
