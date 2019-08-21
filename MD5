@@ -1,8 +1,8 @@
-764bb988bf4c5d2212f3356dd8feb77a *DESCRIPTION
+e96757a027f946d2592a3ee796497561 *DESCRIPTION
 066bdde55f644380a63e88ee9086b1fb *LICENSE
 a05e8768c770058d0393063a6209023c *NAMESPACE
 16667d7f6c7d99c25e0120d9a07fddb9 *R/events_long.R
-094e296624de5f3248243e5ae66b58b7 *R/longitudinalcascade.R
+29abcec1bd6c6b05ea518c77083a7f14 *R/longitudinalcascade.R
 74a73843d06c8dc48e3152d2b7e9146b *data/events_long.RData
 c8c4a2102c0de845393166f7758a773e *man/events_long.Rd
 1e2fefba2819d55b56187fa751ff7de2 *man/longitudinalcascade.Rd
