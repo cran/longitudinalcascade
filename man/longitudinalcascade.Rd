@@ -4,19 +4,35 @@
 \alias{longitudinalcascade}
 \title{Longitudinal cascade statistics and charts}
 \usage{
-longitudinalcascade(events.long, stages.order, groups.order = NA,
-  groups.date.breaks = NA, groups.date.breaks.labels = NA,
-  death.indicator = NA, censorship.indicator = NA,
-  censorship.date = "lastdate", allow.sub.stages = FALSE,
+longitudinalcascade(
+  events.long,
+  stages.order,
+  groups.order = NA,
+  groups.date.breaks = NA,
+  groups.date.breaks.labels = NA,
+  death.indicator = NA,
+  censorship.indicator = NA,
+  censorship.date = "lastdate",
+  allow.sub.stages = FALSE,
   allow.sub.stage.mortality = FALSE,
-  sub.stage.mortality.mode = "standard", skip.mode = "none",
-  time.horizon = 365, TTE.quantiles = c(0.25, 0.5, 0.75),
-  main.fill.colors = "#4472C4", death.fill.color = "#FF6A6A",
-  chart.mode = "stage panels", ts.indicator = NA, ts.gap.time = 90,
-  ts.start.stage = 1, ts.end.stage = NA, ts.color = "#a2f2da",
-  risk.pool.size.line = FALSE, risk.pool.fill.color = "#90dbb2",
-  background.prior.event = TRUE, suppress.messages = FALSE,
-  x.axis.title = "Time (years) from start of stage")
+  sub.stage.mortality.mode = "standard",
+  skip.mode = "none",
+  time.horizon = 365,
+  TTE.quantiles = c(0.25, 0.5, 0.75),
+  main.fill.colors = "#4472C4",
+  death.fill.color = "#FF6A6A",
+  chart.mode = "stage panels",
+  ts.indicator = NA,
+  ts.gap.time = 90,
+  ts.start.stage = 1,
+  ts.end.stage = NA,
+  ts.color = "#a2f2da",
+  risk.pool.size.line = FALSE,
+  risk.pool.fill.color = "#90dbb2",
+  background.prior.event = TRUE,
+  suppress.messages = FALSE,
+  x.axis.title = "Time (years) from start of stage"
+)
 }
 \arguments{
 \item{events.long}{(required) The main dataframe input parameter. The data frame needs at least the following fields:
@@ -77,8 +93,11 @@ longitudinalcascade(events.long, stages.order, groups.order = NA,
 
 \item{x.axis.title}{(optional) Changes the x axis label}
 }
+\value{
+description All data are output to an object containing a the main chart ($chart), a survival-formatted dataset ($surv.dataset), the data underlying the main chart ($surv.dataset.chart), the underlying original dataset in long ($events.long) and wide ($events.wide), individual time to event data ($TTE.ind), TTE data by quantiles ($quantile.TTE), the equivalent functions for deat and transient events, and group difference tests
+}
 \description{
-This package generates a longitudinal casade, including a graphical representation. This takes a long-formatted list of stage-by-stage events and transforms it into a longitudinal cascade, correcting the orders of events.
+This package generates a longitudinal cascade, including a graphical representation. This takes a long-formatted list of stage-by-stage events and transforms it into a longitudinal cascade, correcting the orders of events.
 }
 \examples{
 # Pull in data from example simulated dataset
@@ -113,7 +132,7 @@ df.events.wide <- longitudinalcascade.sim$events.wide
 }
 \references{
 Haber et al. (2017) Lancet HIV 4(5):e223-e230
-(\href{https://www.ncbi.nlm.nih.gov/pubmed/28153470}{PubMed})
+(\href{https://pubmed.ncbi.nlm.nih.gov/28153470/}{PubMed})
 }
 \keyword{cascade}
 \keyword{longitudinal}
